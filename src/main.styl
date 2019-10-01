@@ -1,0 +1,90 @@
+@import "./fontfaces.styl"
+
+body
+  margin 0
+  background-color #474747
+
+
+.sectionWrapper
+  max-width 640px
+  margin 0 auto
+  outline 1px dotted red
+.menu
+  background-image linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)
+  display flex
+  .logo
+    flex-grow 1
+    justify-content center
+    display flex
+  a
+    text-decoration none
+    display flex
+  .logo-text
+    text-shadow 1px 2px 0 rgba(0, 0, 0, 0.42)
+    color #ffffff
+    font-family "LucidaSans"
+    font-size 19px
+    line-height 40px
+    font-style italic
+    text-transform uppercase
+    letter-spacing 0.41px
+  nav
+    background-color #f5c506
+    flex-grow 3
+    display flex
+    ul
+      padding 0
+      margin 0
+      list-style none
+      display flex
+      margin auto 0
+      flex-grow 1
+      li
+        color #9b7d08
+        font-family "SegoeWP"
+        font-size 19px
+        font-weight 400
+        text-transform uppercase
+        letter-spacing 0.19px
+        border-right 1px solid rgba(0,0,0, 0.11)
+        box-sizing border-box
+        line-height 62px
+        margin 0
+        justify-content space-evenly
+        display flex
+      a
+        margin 0
+        display inline-block
+        flex-grow 1
+        
+        
+.player-section
+  position relative
+  .video-controls
+    position absolute
+    bottom 0
+    width 100%
+    .video-controls__inner
+      background-color black
+      width 78%
+      margin 0 auto
+      display flex
+  .btn-play
+    background-color #f5c506
+    opacity 0.37
+    width 27px
+    height 27px
+    border 0
+    background-image url('./assets/img/playTriangle.svg')
+    background-position 55% 50%
+    //background-size cover
+    background-repeat no-repeat
+  .progress-rack
+    width 404px
+    height 12px
+    background-color #f5c506
+    opacity 0.28
+    border-radius 2px
+
+.sec1
+  display flex

@@ -1,0 +1,21 @@
+{
+  "name": "theyalow",
+  "version": "1.0.0",
+  "description": "верстка одного из заданий rsschool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-open": "^3.0.1",
+    "gulp-stylus": "^2.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
