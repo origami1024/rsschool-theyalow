@@ -24,9 +24,9 @@
       </ul>
     </nav>
   </header>
-  <main class="sectionWrapper">
-    <section class="player-section">
-      <video poster="./assets/img/video1ph.png" width=100% autoplay=true>
+  <main>
+    <section class="player-section sectionWrapper">
+      <video class="videocontainer" poster="./assets/img/video1ph.png" width=100% autoplay=true>
         Your browser does not support the video tag.
       </video>
       <div class="video-controls">
@@ -34,41 +34,51 @@
         <div class="video-controls__inner">
           <button class="btn-play"></button>
           <div class="progress-rack">
-            <div class="progress-fill"></div>
+            <div class="progress-fill">
+            </div>
+            <div class="progress-thumb"></div>
           </div>
           <button class="btn-mute"></button>
         </div>
       </div>
     </section>
-    <section class="mid-bar">
-      <div class="mid-bar__item">
-        <img src="./assets/img/midCloud.svg" alt="better design">
-        <h2>better design</h2>
-      </div>
-      <div class="mid-bar__item">
-        <img src="./assets/img/midLeaf.svg" alt="Customise">
-        <h2>Customise</h2>
-      </div>
-      <div class="mid-bar__item">
-        <img src="./assets/img/midPlane.svg" alt="Its Free">
-        <h2>Its Free</h2>
-      </div>
-    </section>
-    <section class="sec1">
-      <div class="sec1__inner">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-        <button class="btn-plus"></button>
-      </div>
-      <div class="sec1__inner">
-        <video poster="./assets/img/video2ph.png" width=100% autoplay=true>
-          Your browser does not support the video tag.
-        </video>
-        <div class="video-controls">
-          <div class="btn-bigplay"></div>
+    <div class="mid-bar-bg-wrapper">
+      <section class="mid-bar sectionWrapper">
+        <div class="bgLayer2wrap">
+          <div class="mid-bar__item">
+            <img src="./assets/img/midCloud.svg" alt="better design">
+            <h2 class="mid-bar__header">better design</h2>
+          </div>
+          <div class="mid-bar__item">
+            <img src="./assets/img/midLeaf.svg" alt="Customise">
+            <h2 class="mid-bar__header">Customise</h2>
+          </div>
+          <div class="mid-bar__item">
+            <img src="./assets/img/midPlane.svg" alt="Its Free">
+            <h2 class="mid-bar__header">Its Free</h2>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="twitter">
+      </section>
+    </div>
+    <div class="sec1-bg-wrapper">
+      <section class="sec1 sectionWrapper">
+        <div class="sec1__inner item1">
+          <div class="sec1__text-block">
+            <p class="sec1__p">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+            <button class="btn-plus"></button>
+          </div>
+        </div>
+        <div class="sec1__inner">
+          <video poster="./assets/img/video2ph.png" width=100% autoplay=true>
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-controls">
+            <div class="btn-bigplay"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="twitter sectionWrapper">
       <!-- there should be bg of bird -->
       <div class="r-aligner">
         <div class="twit">
@@ -84,23 +94,25 @@
           <p>via @cssauthor</p>
         </div>
         <form action="#" class="twit-controls">
-          <input type="text">
-          <submit class="send-twit">Tweet</submit>
+          <input class="twit-inp" type="text">
+          <input type="submit" class="send-twit-btn" value="Tweet">
         </form>
       </div>
     </section>
-    <section class="sec2">
-      <h2>Lorem ipsum dolor sit amet</h2>
+    <section class="sec2 sectionWrapper">
+      <h2 class="sec2__header">Lorem ipsum dolor sit amet</h2>
       <div class="screens">
-        <div class="screens__item"></div>
-        <div class="screens__item"></div>
-        <div class="screens__item"></div>
+        <div class="screens__item screen-desktop"></div>
+        <div class="screens__item screen-laptop"></div>
+        <div class="screens__item screen-smart"></div>
         <div class="discount-tag">Its 100% Free</div>
       </div>
     </section>
   </main>
-  <footer class="sectionWrapper">
-    <a href="#" class="logo"><img src="./assets/img/logo.svg" alt="logo"><h1>THEYALOW</h1></a>
-  </footer>
+  <div class="footer-bg-wrapper">
+    <footer class="sectionWrapper">
+      <a href="#" class="logo"><img class="footer-logo-img"src="./assets/img/logo.svg" alt="logo"><h2 class="logo-text">THEYALOW</h2></a>
+    </footer>
+</div>
 </body>
 </html>
