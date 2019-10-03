@@ -8,97 +8,111 @@
   <title>Макет из задания rsschool</title>
 </head>
 <body>
-  <header class="menu sectionWrapper">
-    <a href="#" class="logo"><img src="./assets/img/logo.svg" alt="logo"><h1 class="logo-text">THEYALOW</h1></a>
-    <nav>
-      <ul>
-        <a href="#">
-          <li><img src="./assets/img/navman.svg" alt="About Us">About Us</li>
-        </a>
-        <a href="#">
-          <li><img src="./assets/img/navfix.svg" alt="Services">Services</li>
-        </a>
-        <a href="#">
-          <li><img src="./assets/img/navmail.svg" alt="Contact">Contact</li>
-        </a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="player-section sectionWrapper">
-      <video class="videocontainer" poster="./assets/img/video1ph.png" width=100% autoplay=true>
-        Your browser does not support the video tag.
-      </video>
-      <div class="video-controls">
-        <div class="btn-bigplay"></div>
-        <div class="video-controls__inner">
-          <button class="btn-play"></button>
-          <div class="progress-rack">
-            <div class="progress-fill">
+  <div class="top-wraper">
+    <header class="menu sectionWrapper">
+      <a href="#" class="logo"><img src="./assets/img/logo.svg" alt="logo"><h1 class="logo-text">THEYALOW</h1></a>
+      <nav>
+        <ul>
+          <a href="#">
+            <li><img src="./assets/img/navman.svg" alt="About Us">About Us</li>
+          </a>
+          <a href="#">
+            <li><img src="./assets/img/navfix.svg" alt="Services">Services</li>
+          </a>
+          <a href="#">
+            <li><img src="./assets/img/navmail.svg" alt="Contact">Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="player-carou-wrapper">
+      <section class="player-section sectionWrapper">
+        <div class="player-iteself">
+          <video class="videocontainer" poster="./assets/img/video1ph.png" width=100% autoplay=true>
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-controls">
+            <div class="btn-bigplay"></div>
+            <div class="video-controls__inner">
+              <button class="btn-play"></button>
+              <div class="progress-rack">
+                <div class="progress-fill">
+                </div>
+                <div class="progress-thumb"></div>
+              </div>
+              <button class="btn-mute"></button>
             </div>
-            <div class="progress-thumb"></div>
           </div>
-          <button class="btn-mute"></button>
         </div>
-      </div>
-    </section>
+        <div class="player-side-text">
+          <h3 class="player-side-h3 text-yellow">the cool</h3>
+          <h3 class="player-side-h3">The minimal</h3>
+        </div>
+      </section>
+      <button class="carou-btn carou-left"></button>
+      <button class="carou-btn carou-right"></button>
+  </div>
+  </div>
+  <main>
     <div class="mid-bar-bg-wrapper">
       <section class="mid-bar sectionWrapper">
         <div class="bgLayer2wrap">
-          <div class="mid-bar__item">
+          <div class="mid-bar__item mbitem1">
             <img src="./assets/img/midCloud.svg" alt="better design">
             <h2 class="mid-bar__header">better design</h2>
           </div>
-          <div class="mid-bar__item">
+          <div class="mid-bar__item mbitem2">
             <img src="./assets/img/midLeaf.svg" alt="Customise">
             <h2 class="mid-bar__header">Customise</h2>
           </div>
-          <div class="mid-bar__item">
+          <div class="mid-bar__item mbitem3">
             <img src="./assets/img/midPlane.svg" alt="Its Free">
             <h2 class="mid-bar__header">Its Free</h2>
           </div>
         </div>
       </section>
     </div>
-    <div class="sec1-bg-wrapper">
-      <section class="sec1 sectionWrapper">
-        <div class="sec1__inner item1">
-          <div class="sec1__text-block">
-            <p class="sec1__p">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-            <button class="btn-plus"></button>
+    <div class="twitterSliderWrapper">
+      <div class="sec1-bg-wrapper">
+        <section class="sec1 sectionWrapper">
+          <div class="sec1__inner item1">
+            <div class="sec1__text-block">
+              <p class="sec1__p">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+              <button class="btn-plus"></button>
+            </div>
           </div>
-        </div>
-        <div class="sec1__inner">
-          <video poster="./assets/img/video2ph.png" width=100% autoplay=true>
-            Your browser does not support the video tag.
-          </video>
-          <div class="video-controls">
-            <div class="btn-bigplay"></div>
+          <div class="sec1__inner">
+            <video poster="./assets/img/video2ph.png" width=100% autoplay=true>
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+              <div class="btn-bigplay"></div>
+            </div>
           </div>
+        </section>
+      </div>
+      <section class="twitter sectionWrapper">
+        <!-- there should be bg of bird -->
+        <div class="r-aligner">
+          <div class="twit">
+            <p>Daily Mobile UI Design Inspiration #1</p>
+            <p>via @cssauthor</p>
+          </div>
+          <div class="twit">
+            <p>Daily Mobile UI Design Inspiration #1</p>
+            <p>via @cssauthor</p>
+          </div>
+          <div class="twit">
+            <p>Daily Mobile UI Design Inspiration #1</p>
+            <p>via @cssauthor</p>
+          </div>
+          <form action="#" class="twit-controls">
+            <input class="twit-inp" type="text">
+            <input type="submit" class="send-twit-btn" value="Tweet">
+          </form>
         </div>
       </section>
     </div>
-    <section class="twitter sectionWrapper">
-      <!-- there should be bg of bird -->
-      <div class="r-aligner">
-        <div class="twit">
-          <p>Daily Mobile UI Design Inspiration #1</p>
-          <p>via @cssauthor</p>
-        </div>
-        <div class="twit">
-          <p>Daily Mobile UI Design Inspiration #1</p>
-          <p>via @cssauthor</p>
-        </div>
-        <div class="twit">
-          <p>Daily Mobile UI Design Inspiration #1</p>
-          <p>via @cssauthor</p>
-        </div>
-        <form action="#" class="twit-controls">
-          <input class="twit-inp" type="text">
-          <input type="submit" class="send-twit-btn" value="Tweet">
-        </form>
-      </div>
-    </section>
     <section class="sec2 sectionWrapper">
       <h2 class="sec2__header">Lorem ipsum dolor sit amet</h2>
       <div class="screens">
