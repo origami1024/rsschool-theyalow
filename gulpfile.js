@@ -21,6 +21,7 @@ function watch() {
   gulp.watch('./src/main.styl', csty)
   gulp.watch('./src/index.html', copyHtml)
   gulp.watch('./src/assets/img/*', imgs)
+  gulp.watch('./src/assets/fonts/*', fnts)
 }
 function con(done) {
   connect.server({
@@ -39,17 +40,15 @@ gulp.task('open', function(){
   gulp.src('./static/index.html')
   .pipe(open1({uri: 'localhost:3000', app: 'chrome'}))
 })
-function defau(){
-  gulp.parallel(con, open, watch)
-  //done()
-}
-/*
-gulp.task('default', ['html', 'compile_stylus', 'connect', 'open', 'watch']);
-*/
 
 async function imgs(){
   return gulp.src('./src/assets/img/*')
   .pipe(gulp.dest('./static/assets/img/'))
+  .pipe(connect.reload())
+}
+async function fnts(){
+  return gulp.src('./src/assets/fonts/*')
+  .pipe(gulp.dest('./static/assets/fonts/'))
   .pipe(connect.reload())
 }
 exports.csty = csty
